@@ -6526,6 +6526,10 @@ public class Client extends GameShell {
 			// intended domain for players
 			good = true;
 		}
+		if (host.endsWith("04scaper.ca")) {
+			// intended domain for players
+			good = true;
+		}
 		if (host.endsWith("localhost") || host.endsWith("127.0.0.1")) {
 			// allow localhost
 			good = true;
@@ -9759,7 +9763,7 @@ public class Client extends GameShell {
 			g.setColor(Color.white);
 			g.drawString("Error - unable to load game!", 50, 50);
 			g.drawString("To play RuneScape make sure you play from", 50, 100);
-			g.drawString("http://2004scape.org", 50, 150);
+			g.drawString("http://04scaper.ca", 50, 150);
 		}
 
 		if (this.errorStarted) {
