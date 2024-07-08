@@ -8369,7 +8369,7 @@ public class Client extends GameShell {
 
 			this.handleInputKey();
 			super.idleCycles++;
-			if (super.idleCycles > 4500) {
+			if (super.idleCycles > 4500 * 4) {
 				this.idleTimeout = 250;
 				super.idleCycles -= 500;
 				// IDLE_TIMER
